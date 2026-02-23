@@ -1,0 +1,115 @@
+{
+  "name": "The Wisdom Archive",
+  "short_name": "WisdomArc",
+  "description": "Cognitive Archeology Lab - Excavate the roots of human knowledge",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#1a1f1c",
+  "background_color": "#1a1f1c",
+  "categories": ["education", "history", "games"],
+  "icons": [
+    {
+      "src": "/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-landing.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "The Archive Landing Page"
+    },
+    {
+      "src": "/screenshot-game.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Excavating a Missing Link"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Missing Link",
+      "short_name": "Missing",
+      "description": "Restore legendary wisdom",
+      "url": "/?category=missing-link",
+      "icons": [
+        {
+          "src": "/shortcut-missing.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Fact or Phantasm",
+      "short_name": "Fact",
+      "description": "Train your skepticism",
+      "url": "/?category=fact-phantasm",
+      "icons": [
+        {
+          "src": "/shortcut-fact.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "The Roots",
+      "short_name": "Roots",
+      "description": "Origins of the mundane",
+      "url": "/?category=roots",
+      "icons": [
+        {
+          "src": "/shortcut-roots.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
