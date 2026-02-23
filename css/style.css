@@ -1,0 +1,108 @@
+:root {
+    --charcoal: #1a1a1a;
+    --parchment: #f3e5ab;
+    --library-green: #2d5a27;
+    --ink-black: #0a0a0a;
+    --accent-gold: #c5a059;
+    --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    background-color: var(--charcoal);
+    color: var(--parchment);
+    font-family: 'Georgia', serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.archive-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.archive-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--accent-gold);
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0.5rem;
+}
+
+/* The Dossier Grid */
+.dossier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+/* Tome Styling */
+.tome {
+    background: var(--ink-black);
+    border: 1px solid var(--library-green);
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition-slow);
+    overflow: hidden;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tome:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.tome-cover {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e1e1e 0%, #0a0a0a 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+.tome-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    filter: sepia(1) saturate(0.5);
+}
+
+.tome h2 {
+    color: var(--accent-gold);
+    font-size: 1.8rem;
+}
+
+.tome-details {
+    padding: 1.5rem;
+    background: var(--parchment);
+    color: var(--ink-black);
+    font-size: 0.9rem;
+    transform: translateY(100%); /* Hidden by default */
+    transition: var(--transition-slow);
+}
+
+.tome:hover .tome-details {
+    transform: translateY(0);
+}
+
+.status {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    border-top: 1px solid var(--ink-black);
+    padding-top: 5px;
+}
